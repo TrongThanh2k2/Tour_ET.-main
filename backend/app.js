@@ -41,7 +41,7 @@ app.use("/api/booking", bookingRouter);
 mongoose.set("strictQuery", false);
 async function connectToDb() {
   try {
-    await mongoose.connect(process.env.MONGODBURL, {
+    await mongoose.connect(process.env.MONGODB_URI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
