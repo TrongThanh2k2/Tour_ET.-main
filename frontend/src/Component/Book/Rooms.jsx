@@ -109,7 +109,7 @@ function Rooms({ id, image, name, isRoom, setIsRoom, description }) {
                   />
                   <p>{description} </p>
                   <div className="d-flex justify-content-between px-3 text-primary border pt-2 my-2">
-                    <h5>Room number: {roomNumber} </h5>
+                    <h5>Số phòng: {roomNumber} </h5>
                     <h5>{type} </h5>
                   </div>
                   <h3 className="px-3 text-end">{price} birr</h3>

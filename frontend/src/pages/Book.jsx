@@ -78,7 +78,7 @@ function Book() {
   };
 
   if (!pkg) {
-    return <h3>no package for today </h3>;
+    return <h3>Hôm nay không có gói dịch vụ nào </h3>;
   }
 
   return (
@@ -118,10 +118,10 @@ function Book() {
           onChange={(e) => setNumTour(e.target.value)}
         />
         <button className="btn btn-secondary ms-5 d-inline" onClick={calPrice}>
-          calculate price
+          Tính giá ngay
         </button>
         <p className="lead d-inline ms-5 fw-bold">
-          Total price : {totalPrice}{" "}
+          Tổng chi phí: {totalPrice}{" "}
         </p>
       </div>
 
@@ -304,13 +304,13 @@ function Book() {
                   className="btn btn-outline-primary"
                   onClick={() => setRoomSelect(false)}
                 >
-                  Choose Another
+                  Chọn lựa khác
                 </button>
               </div>
             )}
           </div>
           <button type="submit" className="mt-4 btn btn-secondary">
-            Reserve Now
+            Đặt ngay
           </button>
         </form>
       </div>

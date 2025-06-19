@@ -129,7 +129,7 @@ function PackageDetail() {
             </div>
             <div className="d-flex justify-content-between align-items-center">
               <h4 className="lead fs-4 rounded-pill py-4 text-start">
-                {site.pricePerAdult}.00 Birr Per adult
+                {site.pricePerAdult}.00 VND cho mỗi người lớn
               </h4>
               <div
                 style={{ height: "50px" }}
@@ -148,18 +148,18 @@ function PackageDetail() {
                       });
                     }}
                   >
-                    <AiOutlineShoppingCart /> Add to Cart
+                    <AiOutlineShoppingCart /> Thêm vào giỏ hàng
                   </button>
                 )}
                 {itemAdded && (
-                  <button className="btn btn-primary btn-md">Added</button>
+                  <button className="btn btn-primary btn-md">Đã thêm vào giỏ hàng</button>
                 )}
                 <button className="btn btn-info btn-lg ">
                   <Link
                     className="text-decoration-none text-light"
                     to={`/book/${site._id}`}
                   >
-                    <BsCheck2Square /> Book
+                    <BsCheck2Square /> Đặt ngay
                   </Link>
                 </button>
               </div>
@@ -186,7 +186,7 @@ function PackageDetail() {
             id="accordionFlushExample"
           >
             <h2 className="text-start fs-5 py-2">
-              Type of activity{" "}
+              Hình thức hoạt động{" "}
               <span className="text-muted"> {site.to_do_type}</span>{" "}
             </h2>
             <div className="accordion-item">
@@ -199,7 +199,7 @@ function PackageDetail() {
                   aria-expanded="false"
                   aria-controls="flush-collapseOne"
                 >
-                  What's included
+                  Dịch vụ bao gồm
                 </button>
               </h2>
               <div
@@ -229,7 +229,7 @@ function PackageDetail() {
                   aria-expanded="false"
                   aria-controls="flush-collapseTwo"
                 >
-                  What's not included
+                  Dịch vụ không kèm theo
                 </button>
               </h2>
               <div
@@ -259,7 +259,7 @@ function PackageDetail() {
                   aria-expanded="false"
                   aria-controls="flush-collapseThree"
                 >
-                  What to expect
+                  Bạn sẽ trải nghiệm gì
                 </button>
               </h2>
               <div
@@ -292,7 +292,7 @@ function PackageDetail() {
                   aria-expanded="false"
                   aria-controls="flush-collapseFour"
                 >
-                  Additional information
+                  Thông tin chi tiết khác
                 </button>
               </h2>
               <div
@@ -322,7 +322,7 @@ function PackageDetail() {
                   aria-expanded="false"
                   aria-controls="flush-collapseFive"
                 >
-                  Cancellation policy
+                  Điều kiện hủy và hoàn tiền
                 </button>
               </h2>
               <div
@@ -343,7 +343,7 @@ function PackageDetail() {
                 to={`/review/${site._id}`}
                 className="btn btn-outline-secondary "
               >
-                Write a review
+                Viết đánh giá
               </Link>
             </div>
             <Review unique={site._id} />

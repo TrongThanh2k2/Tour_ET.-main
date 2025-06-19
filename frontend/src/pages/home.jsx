@@ -108,7 +108,7 @@ const Home = () => {
         id="visit"
         className="container text-center fs-2 text-uppercase fw-semibold mt-5"
       >
-        Recent packages
+        Các gói gần đây
       </h2>
       <div className="site container-fluid ps-1 mb-5">
         <Swipper data={recentpkg} />
@@ -118,7 +118,7 @@ const Home = () => {
         id="visit"
         className="container text-center fs-2 text-uppercase fw-semibold mt-5"
       >
-        Top Rated Packages
+        Gói ưu tiên hàng đầu
       </h2>
       <div className="site">{<Swipper data={popularPkg} />}</div>
 
@@ -129,7 +129,7 @@ const Home = () => {
           id="visit"
           className="container text-center fs-2 text-uppercase fw-semibold my-4"
         >
-          MORE TO EXPLORE
+          KHÁM PHÁ NHIỀU HƠN NỮA
         </h2>
         <div className="site container">
           <div className=" row justify-content-evenly">
@@ -145,11 +145,10 @@ const Home = () => {
                     Rock Lalibela
                   </span>
                   <span className="card-text">
-                    Lalibela is a UNESCO World Heritage site located in the
-                    northern region of Ethiopia, known for its exceptional
-                    rock-cut churches carved out of solid basaltic rock. The
-                    complex consists of 11 monolithic structures that are still
-                    used for religious purposes today.
+                    Lalibela là một Di sản Thế giới được UNESCO công nhận, 
+                    nằm ở vùng phía bắc của Ethiopia, nổi tiếng với các nhà thờ đá độc đáo 
+                    được tạc trực tiếp từ đá bazan nguyên khối. Quần thể này gồm 11 công trình nguyên khối, 
+                    và đến nay vẫn được sử dụng cho các mục đích tôn giáo.
                   </span>
                 </figcaption>
               </figure>
@@ -166,11 +165,11 @@ const Home = () => {
                     Rift valley
                   </span>
                   <span className="descs">
-                    The Ethiopian Rift Valley is a section of the larger East
-                    Valley that runs through Ethiopia, and is a wonder with a
-                    diverse people and cultural attractions. Lake Langano is
-                    renowned for their birdlife and offer opportunities for boat
-                    trips and water sports.
+                    Thung lũng tách giãn Ethiopia là một phần của Thung lũng Đông Phi 
+                    rộng lớn hơn, chạy qua lãnh thổ Ethiopia, và là một kỳ quan 
+                    với sự đa dạng về con người và các điểm hấp dẫn văn hóa. 
+                    Hồ Langano nổi tiếng với hệ động vật chim phong phú và 
+                    mang đến cơ hội cho các chuyến đi thuyền cũng như các hoạt động thể thao dưới nước.
                   </span>
                 </figcaption>
               </figure>
@@ -187,11 +186,10 @@ const Home = () => {
                     Axum
                   </span>
                   <span className="">
-                    One of the most notable features of Axum is its remarkable
-                    stelae. These stelae are a testament to the engineering and
-                    artistic skill of the Aksumites and are considered one of
-                    the greatest archaeological wonders of Africa. Visit axum,
-                    the cradle of life.
+                    Một trong những điểm nổi bật nhất của Axum là những cột đá (stelae) ấn tượng. 
+                    Những cột đá này là minh chứng cho kỹ thuật xây dựng và nghệ thuật điêu luyện 
+                    của người Aksum cổ đại, và được xem là một trong những kỳ quan khảo cổ vĩ đại nhất 
+                    của châu Phi. Hãy đến thăm Axum – cái nôi của sự sống.
                   </span>
                 </figcaption>
               </figure>

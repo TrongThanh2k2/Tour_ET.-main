@@ -88,7 +88,7 @@ const ReviewsPage = () => {
           <div className="review col-md-6 ms-5 text-start">
             <form onSubmit={handelSubmit} className="reviewForm">
               <div>
-                <h6>RATE YOUR EXPERIANCE</h6>
+                <h6>ĐÁNH GIÁ TRẢI NGHIỆM CỦA BẠN</h6>
                 <div className="star">
                   {rateStars.map((_, index) => {
                     return (
@@ -105,7 +105,7 @@ const ReviewsPage = () => {
               </div>
 
               <label className="writelable d-block" htmlFor="reviewArea">
-                WRITE YOUR REVIEW
+                VIẾT BÀI ĐÁNH GIÁ CỦA BẠN
               </label>
               <textarea
                 name="message"
@@ -125,8 +125,8 @@ const ReviewsPage = () => {
                   }}
                 />
                 <span className="fw-bold">
-                  I certify that this review is based on my own experience and
-                  is my genuine opinion.
+                  Tôi cam đoan rằng đánh giá này dựa trên chính trải nghiệm của tôi 
+                  và là ý kiến chân thật của riêng tôi.
                 </span>
               </label>
               <input
@@ -144,7 +144,7 @@ const ReviewsPage = () => {
         </div>
         <div className="otherReviews mt-5">
           <h3 className="recent text-decorations-underline">
-            RECENT REVIEWS BY OTHERS
+            ĐÁNH GIÁ GẦN ĐÂY CỦA KHÁCH HÀNG KHÁC
           </h3>
           <Review unique={site._id} />
         </div>

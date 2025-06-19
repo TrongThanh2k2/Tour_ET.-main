@@ -44,14 +44,14 @@ function Cart() {
               removeFromcart(item);
             }}
           >
-            remove
+            Xóa
           </button>
           <Link
             className="btn btn-outline-primary"
             to={`/book/${item.packages}`}
             key={item.packages}
           >
-            Book
+            Đặt ngay
           </Link>
         </div>
       </div>
@@ -63,7 +63,7 @@ function Cart() {
         style={{ height: "500px" }}
         className="d-flex align-items-center justify-content-center"
       >
-        <h1 className="fw-bold">No packages was added to wishlist </h1>
+        <h1 className="fw-bold">Bạn chưa thêm gói nào vào danh sách yêu thích. </h1>
       </div>
     );
   }
@@ -74,10 +74,10 @@ function Cart() {
           <div className="cart col-8">{showItems}</div>
           <div className="col-md-3 card shadow p-3 bg-dark">
             <h3 className="h4 text-start text-white fw-bold">
-              Review Order Details
+              Xem lại thông tin đặt hàng
             </h3>
-            <h5 className="text-start text-white">Total: {total} </h5>
-            <h5 className="text-start text-white">count: {state.length} </h5>
+            <h5 className="text-start text-white">Tổng cộng: {total} </h5>
+            <h5 className="text-start text-white">Số lượng: {state.length} </h5>
           </div>
         </div>
       </div>

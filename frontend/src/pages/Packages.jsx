@@ -81,13 +81,13 @@ const Packages = () => {
                 className="fs-5 ms-auto me-auto fw-bold text-white"
                 style={{ fontSize: "20px" }}
               >
-                Filter By
+                Lọc theo
               </h1>
               <button
                 onClick={resetFilter}
                 className="btn btn-outline-info rounded-2 text-white"
               >
-                Reset Filters
+                Đặt lại bộ lọc
               </button>
             </div>
 
@@ -99,32 +99,32 @@ const Packages = () => {
                 onChange={(e) => handleChange(e)}
                 value={dropDown.type}
               >
-                <option value="any">Any type</option>
-                <option value="Group">Group</option>
-                <option value="Park">Park</option>
-                <option value="City">City</option>
-                <option value="Adventure">Adventure</option>
+                <option value="any">Tất cả các loại</option>
+                <option value="Group">Nhóm</option>
+                <option value="Park">Công viên</option>
+                <option value="City">Thành phố</option>
+                <option value="Adventure">Chuyến phiêu lưu</option>
               </select>
             </div>
 
             <div className="mt-3">
-              <h5 className="text-white">PRICE</h5>
+              <h5 className="text-white">GIÁ</h5>
               <select
                 className="form-select text-center"
                 name="price"
                 onChange={(e) => handleChange(e)}
                 value={dropDown.price}
               >
-                <option value="any">Any price</option>
-                <option value="less5000">under 5000</option>
+                <option value="any">Tất cả các mức giá</option>
+                <option value="less5000">Dưới 5.000</option>
                 <option value="5000-10000">5000 - 10000</option>
                 <option value="10000-15000">10000 - 15000</option>
-                <option value="morethan15000">Above 15000</option>
+                <option value="morethan15000">Trên 15.000</option>
               </select>
             </div>
 
             <div className="mt-3">
-              <h5 className="text-white">RATE</h5>
+              <h5 className="text-white">TỶ LỆ</h5>
               <select
                 className="form-select text-center"
                 name="rate"
@@ -174,7 +174,7 @@ const Packages = () => {
             }}
           >
             {datas.length === 0 && (
-              <h1 className="mt-5">No Result was found</h1>
+              <h1 className="mt-5">Không có kết quả phù hợp</h1>
             )}
             {datas.length > 0 &&
               datas.map((_package) => {
@@ -196,7 +196,7 @@ const Packages = () => {
                     <div className="col col-md-8 ">
                       <h3 className="fs-5 text-uppercase fw-bold">{name} </h3>
                       <h5 className="d-inline h4 fw-light"> _ {location} _ </h5>
-                      <h5 className="h5">price from {pricePerAdult} birr</h5>
+                      <h5 className="h5">Giá từ {pricePerAdult} VND</h5>
                       <div>
                         {stars &&
                           stars.map((_, index) => {
